@@ -1,0 +1,4 @@
+orangutan, malpa, pies
+kawa, herbata, 7up
+ciasteczko, herbatnik, ciasto
+dlugopis, olowek, pioro
