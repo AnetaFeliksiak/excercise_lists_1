@@ -15,5 +15,12 @@ def read_from_file(filename='default_words.txt'):
     return list_of_lines
 
 
-def write_to_file(words, filename='longest_words.txt'):
-    pass
+def write_to_file(items, filename='longest_words.txt'):
+
+    file = open(filename, "a")
+    for item in items:
+        item_strings = [str(element) for element in item]
+        line_to_write = ",".join(item_strings)
+        file.write(line_to_write + '\n')
+    file.close()
+
