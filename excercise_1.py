@@ -28,3 +28,11 @@ def find_the_longest_word(list_of_lines):
                 max_index = index
                 longest_words.append([max_item, str(max_length), str(max_index)])
     return longest_words
+
+
+def main():
+    list_of_lines = file_manager.read_from_file("words.txt")
+    longest_words = find_the_longest_word(list_of_lines)
+    file_manager.write_to_file(longest_words)
+
+main()
